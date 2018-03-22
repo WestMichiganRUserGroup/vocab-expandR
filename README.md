@@ -3,11 +3,11 @@ Vocabulary ExpandR Challenge
 
 *Expand your R vocabulary, get goodies*
 
-Inspired by Hadley Wickham's Advanced R chapter, [Vocabulary](http://adv-r.had.co.nz/Vocabulary.html), we have a fun challenge for our WMRUG members!
+Inspired by Hadley Wickham's Advanced R chapter, [Vocabulary](http://adv-r.had.co.nz/Vocabulary.html), we have a fun challenge for our WMRUG members! **We are looking for people to talk about R functions that you think should be in every R user's toolkit. Participants will get FREE CANDY or FREE COFFEE!**
 
-An R programmer has a tendency to collect cool functions over time. When an R programmer comes across a problem that they have not encountered before, they usually have to hit the documentation, browse the blogosphere, or peruse some package vignettes. This is a great way to discover new functionality and become a more well-rounded R user.
+An R programmer has a tendency to collect cool functions and idioms over time. When an R programmer comes across a problem that they have not encountered before, they usually have to hit the documentation, browse the blogosphere, or peruse some package vignettes. This is a great way to discover new functionality and become a more well-rounded R user.
 
-We want to leverage each other's expertise to become more well-rounded as a group and share our knowledge with each other. Please come and show us some gems in your collection of R tricks!
+We want to leverage each other's expertise to become more well-rounded as a group and share our knowledge with each other. Please come show us some gems in your collection or show us that you can teach an old function new tricks!
 
 ## How it works
 
@@ -26,7 +26,8 @@ Email your presentation to the [West Michigan R User's Group](mailto:WestMichiga
 - Your name
 - Which month you would like to present
 - Which treat you would like
-- Whether we can post your presentation to our GitHub repository (under GPLv3)
+- Whether we can post your presentation to this GitHub repository (under GPLv3)
+- (Optional) You may submit a PR to this repos if you would like.
 
 ## Tips
 
