@@ -1,0 +1,87 @@
+---
+title: "Reduce()"
+author: "Derek"
+date: "March 20, 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Problem
+
+Do you ever need to merge a bunch of data.frames
+
+![](./sad_kid.jpg)
+
+
+
+## `Reduce()`!
+
+Reduce uses a binary function to successively combine the elements of a given vector and a possibly given initial value.
+
+```{r, eval=FALSE}
+Reduce(f, x, init, right = FALSE, accumulate = FALSE)
+```
+
+Where:
+
+`f` is a function
+
+`x` is a list
+
+## Let's do an example
+
+Small batch, hand crafted data
+
+```{r}
+# generate some sample ids
+sample.ids <- paste0(letters[1:10], sample(1:110, 10))
+
+# make a list to hold the dataframes
+data.list <- list()
+
+#imagine we're reading in csvs ... 
+data.list$norm <- data.frame(sample.id =sample.ids,
+                             norm= rnorm(10, mean = 5))
+data.list$unif <- data.frame(sample.id = sample.ids,
+                            uniform = runif(10))
+data.list$fish <- data.frame(sample.id = sample.ids,
+                             fish = rpois(n = 10, lambda = 42))
+data.list$t    <- data.frame(sample.id = sample.ids,
+                             tval = rt(n = 10, df = 9))
+
+```
+
+
+
+## what the data looks like
+
+```{r}
+str(data.list)
+```
+
+
+
+## go go gadget `dplyr`
+
+```{r, message=FALSE}
+library(dplyr)
+```
+
+
+```{r, eval = FALSE}
+left_join(x, y, by = NULL, copy = FALSE, suffix = c(".x", ".y"), ...)
+```
+
+`left_join()`  
+return all rows from x, and all columns from x and y. Rows in x with no match in y will have NA values in the new columns. If there are multiple matches between x and y, all combinations of the matches are returned.
+
+
+## and using `Reduce()`
+
+```{r}
+Reduce(f = left_join, x = data.list)
+```
+
