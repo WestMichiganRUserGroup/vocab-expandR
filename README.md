@@ -1,7 +1,7 @@
 Vocabulary ExpandR Challenge
 ============================
 
-** Expand your R vocabulary, get goodies**
+*Expand your R vocabulary, get goodies*
 
 Inspired by Hadley Wickham's Advanced R chapter, [Vocabulary](http://adv-r.had.co.nz/Vocabulary.html), we have a fun challenge for our WMRUG members!
 
@@ -11,7 +11,7 @@ We want to leverage each other's expertise to become more well-rounded as a grou
 
 ## How it works
 
-It's easy! Just present a short 10 minute talk about a function at a West Michigan R User's Group meeting. After your presentation, you get your choice of **KING SIZE** candybaR or a $5 gift card to StaRbucks.
+It's easy! Just present a short 10 minute talk about a function at a West Michigan R User's Group meeting. After your presentation, you get your choice of **KING SIZE** candyba*R* or a $5 gift card to Sta*R*bucks.
 
 ## What you have to do
 
